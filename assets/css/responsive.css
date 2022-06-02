@@ -1,0 +1,53 @@
+@media  (max-width:769px) {
+    .top{
+        background-image: none;
+        background-color: var(--banner-color);
+        height: auto;
+    }
+
+    #blog .owl-nav.disabled{
+        display: none;
+    }
+
+    .service-item{
+        margin: 12px 0;
+    }
+
+    .footer-text{
+        margin: 20px 0;
+        text-align: center ;
+    }
+
+    .customer-section{
+        flex-direction: column;
+    }
+
+    .customer-section img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .social-media{
+        justify-content: center;
+    }
+
+    .titr-footer{
+        margin: 20px 0;
+    }
+
+    .overlay-blog{
+        top: 20%;
+        right: 25%;
+    }
+
+    .overlay-blog h1{
+        font-size: var(--fs-15);
+    }
+    .flex-custom{
+        flex-direction: column;
+    }
+
+    .flex-custom h1{
+        margin: 30px 0;
+    }
+}

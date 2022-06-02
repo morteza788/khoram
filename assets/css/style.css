@@ -1,0 +1,277 @@
+/*   Default styles   */
+
+/* fonts */
+@font-face {
+	font-family: "iran";
+	src: url("../fonts/iran-sans-400.eot");
+	src: url("../fonts/iran-sans-400.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/iran-sans-400.woff2") format("woff2"),
+    url("../fonts/iran-sans-400.woff") format("woff"),
+    url("../fonts/iran-sans-400.ttf") format("truetype");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "aviny";
+	src: url("../fonts/aviny-700.eot");
+	src: url("../fonts/aviny-700.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/aviny-700.woff2") format("woff2"),
+		 url("../fonts/aviny-700.woff") format("woff"),
+		 url("../fonts/aviny-700.ttf") format("truetype");
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "shabnam";
+	src: url("../fonts/shabnam-400.eot");
+	src: url("../fonts/shabnam-400.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/shabnam-400.woff2") format("woff2"),
+		 url("../fonts/shabnam-400.woff") format("woff"),
+		 url("../fonts/shabnam-400.ttf") format("truetype");
+	font-weight: 400;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "vazir";
+	src: url("../fonts/vazir-400.eot");
+	src: url("../fonts/vazir-400.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/vazir-400.woff2") format("woff2"),
+		 url("../fonts/vazir-400.woff") format("woff"),
+		 url("../fonts/vazir-400.ttf") format("truetype");
+	font-weight: 400;
+}
+
+/* color */
+:root
+{
+      /* colors */
+      --body : #fff;
+      --header-color: #6C757D;
+      --banner-color:#3569A2;
+      /* fonts */
+      --fs-10 : 10px;
+      --fs-11 : 11px;
+      --fs-12 : 12px;
+      --fs-13 : 13px;
+      --fs-14 : 14px;
+      --fs-15 : 15px;
+      --fs-16 : 16px;
+      --fs-17 : 17px;
+      --fs-18 : 18px;
+      --fs-19 : 19px;
+      --fs-20: 20px;
+      --fs-21 : 21px;
+      --fs-22 : 22px;
+      --fs-23 : 23px;
+      --fs-24 : 24px;
+      --fs-25 : 25px;
+      --fs-26 : 26px;
+      --fs-27: 27px;
+      --fs-30 : 30px;
+      /* margin */
+      --mt-5:6rem;
+      --mt-6:10rem;
+      --mt-7:7rem;
+      /*border-radius*/
+      --rounded-15 : 15px;
+}
+
+
+/* element , body => style */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+body{
+    direction: rtl;
+    text-align: right;
+    font-family: 'aviny';
+}
+
+
+#menu-toggle{
+    cursor: pointer;
+}
+
+.backdrop{
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+}
+
+
+
+.hr{
+    width: 250px;
+    color: #000;
+    margin: 25px 0;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.banner-image{
+    margin-top: 18px;
+}
+
+.titr h1{
+    font-size: var(--fs-22);
+    font-weight: bold;
+}
+
+.titr p{
+    font-size: var(--fs-18);
+}
+
+.breadcrumb-custom{
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-13);
+}
+
+.custom-card-product .sublayer{
+    position: relative;
+}
+
+.custom-card-product .sublayer .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    background-color: rgb(245, 245, 245);
+    opacity:0;
+    visibility: hidden;
+    transition: all 0.2s ease-out;
+    transform:rotate();
+}
+
+.custom-card-product:hover  .overlay{
+    opacity:.8;
+    visibility: visible;
+}
+
+/* about */
+
+.sblayer{
+    position: relative;
+     overflow: hidden;
+}
+
+.sblayer .ovlayer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.sblayer:hover .ovlayer{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+
+/* about */
+
+.breadcrumb-custom{
+    padding: 1rem 0;
+}
+
+.breadcrumb-custom .item-bread{
+    font-size: var(--fs-15);
+    margin: 0 5px;
+}
+
+.border-footer{
+    border: 1px solid #efefef;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+/* custom-margin */
+.mt-6{
+    margin-top: var(--mt-6);
+}
+
+.mt-7{
+    margin-top: var(--mt-5);
+}
+
+.my-6{
+    margin: var(--mt-5) 0;
+}
+
+.me-6{
+    margin-right: 17rem !important;
+    font-size: var(--fs-13);
+}
+
+/* custom-font */
+
+.fs-12{
+    font-size: var(--fs-12) !important;
+}
+
+.fs-13{
+    font-size: var(--fs-13) !important;
+}
+
+.fs-15{
+    font-size: var(--fs-15);
+}
+
+.fs-20{
+    font-size: var(--fs-20);
+}
+
+
+/* custom-bg */
+
+.bg-blue{
+    background-color: rgb(64, 196, 255);
+}
+
+.text-blue{
+    color: #0e73e5;
+}
+
+
+/* width */
+
+.w-85{
+  width: 85%;
+}
